@@ -19,7 +19,7 @@ app.use("/api/v1/users", userRoute);
 app.use("/api/v1/tasks", taskRoute);
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
+    origin: ["http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
