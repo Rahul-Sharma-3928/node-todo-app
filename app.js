@@ -19,7 +19,7 @@ app.use("/api/v1/users", userRoute);
 app.use("/api/v1/tasks", taskRoute);
 app.use(
   cors({
-    origin: "https://react-todo-app-eta-orpin.vercel.app",
+    origin: [process.env.FRONTEND_URL],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
